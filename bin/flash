@@ -4,4 +4,8 @@ $: << File.dirname(__FILE__)+'/../lib'
 
 require 'flash/corpus'
 include Flash::Corpus
-p phrase
+
+phrase.each do |section|
+  print section
+  gets
+end

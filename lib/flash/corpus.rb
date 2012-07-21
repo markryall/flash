@@ -18,6 +18,7 @@ module Flash
     Duōshǎo qián,多少钱,How much money
     Zhège,这个,This
     Qīn'ài de,亲爱的,Darling
+    Líng,零,Zero
     Yī,一,One
     Èr,二,Two
     Sān,三,Three
@@ -40,14 +41,27 @@ module Flash
     Èrshí,二十,Twenty
     Sānshí,三十,Thirty
     Bǎi,百,One Hundred
+    Yībǎi líng yī,一百零一,One hundred and one
+    Yībǎi yī,一百一,One hundred and ten
+    Yībǎi yīshí,一百一十,One hundred and ten
+    Yīqiān,一千,One thousand
     Bù hǎoyìsi qǐng ràng yīxià,不好意思请让一下,Excuse me please let me past
     Zàijiàn,再见,Goodbye
     Míngtiān jiàn,明天见,See you tomorrow
     Yīmáobùbá,一毛不拔,Stingy
+    Duìbùqǐ,对不起,I am sorry
+    Méiguānxì,没关系,Nevermind/That's ok
+
     EOF
 
     def phrase
-      ALL[rand(ALL.count)]
+      ALL[rand(ALL.count)].tap do |p|
+        p.reverse! if flip?
+      end
+    end
+
+    def flip?
+      rand(2) == 0
     end
   end
 end
