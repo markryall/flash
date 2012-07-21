@@ -5,7 +5,14 @@ $: << File.dirname(__FILE__)+'/../lib'
 require 'flash/corpus'
 include Flash::Corpus
 
-phrase.each do |section|
-  print section
-  gets
+loop do
+  begin
+    phrase.each do |section|
+      print section
+      gets
+    end
+    puts
+  rescue Interrupt
+    exit
+  end
 end
