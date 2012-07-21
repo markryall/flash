@@ -18,6 +18,32 @@ module Flash
     Duōshǎo qián,多少钱,How much money
     Zhège,这个,This
     Qīn'ài de,亲爱的,Darling
+    Yī,一,One
+    Èr,二,Two
+    Sān,三,Three
+    Sì,四,Four
+    Wǔ,五,Five
+    Liù,六,Six
+    Qī,七,Seven
+    Bā,八,Eight
+    Jiǔ,九,Nine
+    Shí,十,Ten
+    Shíyī,十一,Eleven
+    Shí'èr,十二,Twelve
+    Shísān,十三,Thirteen
+    Shísì,十四,Fourteen
+    Shíwǔ,十五,Fifteen
+    Shíliù,十六,Sixteen
+    Shíqī,十七,Seventeen
+    Shíbā,十八,Eighteen
+    Shíjiǔ,十九,Nineteen
+    Èrshí,二十,Twenty
+    Sānshí,三十,Thirty
+    Bǎi,百,One Hundred
+    Bù hǎoyìsi qǐng ràng yīxià,不好意思请让一下,Excuse me please let me past
+    Zàijiàn,再见,Goodbye
+    Míngtiān jiàn,明天见,See you tomorrow
+    Yīmáobùbá,一毛不拔,Stingy
     EOF
 
     def phrase
