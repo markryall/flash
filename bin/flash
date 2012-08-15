@@ -4,13 +4,13 @@ $: << File.dirname(__FILE__)+'/../lib'
 
 require 'flash/corpus'
 
-corpus = Flash::Corpus.new ARGV.shift
+corpus = Flash::Corpus.new *ARGV
 
 loop do
   begin
     corpus.phrase.each do |section|
       print section
-      gets
+      $stdin.gets
     end
     puts
   rescue Interrupt
