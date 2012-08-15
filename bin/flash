@@ -3,11 +3,12 @@
 $: << File.dirname(__FILE__)+'/../lib'
 
 require 'flash/corpus'
-include Flash::Corpus
+
+corpus = Flash::Corpus.new ARGV.shift
 
 loop do
   begin
-    phrase.each do |section|
+    corpus.phrase.each do |section|
       print section
       gets
     end
